@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">XheWeather</string>
+    <string name="what_s_the_weather">What\'s the Weather?</string>
+    <string name="today_s_weather_at">Today\'s weather at</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="enter_your_city_name">Enter Your City Name</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="degree">12°C</string>
+    <string name="city_name">City Name</string>
+    <string name="country_code">Country Code</string>
+    <string name="error_message">Try Again</string>
+    <string name="greetings">Hello, Today\'s Weather At</string>
+    <string name="daily_weather">Here\'s 7 Day Weather</string>
+    <string name="status">Clear Sky</string>
+    <string name="clock">06.00</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="visibility">Visibility</string>
+    <string name="clear_sky">Clear Sky</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="next_7_days">Next 7 days</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+</resources>
