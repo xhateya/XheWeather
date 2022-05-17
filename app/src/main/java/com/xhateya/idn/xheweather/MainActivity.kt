@@ -11,6 +11,7 @@ import android.location.LocationManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import android.util.Log
@@ -40,6 +41,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+
     companion object{
         private const val TAG = "MainActivity"
     }
@@ -54,6 +56,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+
+
+
 
         mFusedLocationClient= LocationServices.getFusedLocationProviderClient(this)
 
@@ -229,15 +237,6 @@ class MainActivity : AppCompatActivity() {
             val tvDegree: TextView = findViewById(R.id.tv_degree)
             tvDegree.text = responseBody.main.temp.toString()+ getUnit(application.resources.configuration.locales.toString())
 
-
-            val tvPressure: TextView= findViewById(R.id.tv_pressure)
-            tvPressure.text = responseBody.main.pressure.toString()
-
-            val tvHumidity: TextView= findViewById(R.id.tv_humidity)
-            tvHumidity.text = responseBody.main.humidity.toString() + " per cent"
-
-            val tvVisibility: TextView= findViewById(R.id.tv_visibility)
-            tvVisibility.text = responseBody.visibility.toString()
 
             val ivWeather: ImageView= findViewById(R.id.iv_weather)
             when(responseBody.weather[i].icon){
